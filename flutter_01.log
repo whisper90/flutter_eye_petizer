@@ -1,0 +1,116 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter build bundle --target E:\tutor\flutter_eye_petizer\flutter_eye_petizer\lib\main.dart --target-platform android-arm --filesystem-scheme org-dartlang-root --track-widget-creation --depfile E:\tutor\flutter_eye_petizer\flutter_eye_petizer\build\app\intermediates\flutter\debug\android-arm/snapshot_blob.bin.d --asset-dir E:\tutor\flutter_eye_petizer\flutter_eye_petizer\build\app\intermediates\flutter\debug\android-arm/flutter_assets --debug
+
+## exception
+
+FileSystemException: FileSystemException: Exists failed, path = 'E:\tutor\flutter_eye_petizer\flutter_eye_petizer\build\app\intermediates\flutter\debug\android-arm/flutter_assets' (OS Error: 拒绝访问。
+, errno = 5)
+
+```
+#0      _Directory.existsSync (dart:io/directory_impl.dart:99:7)
+#1      _Directory.createSync (dart:io/directory_impl.dart:131:11)
+#2      _LocalDirectory&LocalFileSystemEntity&ForwardingDirectory.createSync (package:file/src/forwarding/forwarding_directory.dart:22:16)
+#3      writeBundle (package:flutter_tools/src/bundle.dart:181:13)
+<asynchronous suspension>
+#4      assemble (package:flutter_tools/src/bundle.dart:171:9)
+<asynchronous suspension>
+#5      BundleBuilder.build (package:flutter_tools/src/bundle.dart:114:11)
+<asynchronous suspension>
+#6      BuildBundleCommand.runCommand (package:flutter_tools/src/commands/build_bundle.dart:116:25)
+<asynchronous suspension>
+#7      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:478:18)
+<asynchronous suspension>
+#8      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:383:33)
+<asynchronous suspension>
+#9      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:29)
+<asynchronous suspension>
+#10     _rootRun (dart:async/zone.dart:1124:13)
+#11     _CustomZone.run (dart:async/zone.dart:1021:19)
+#12     _runZoned (dart:async/zone.dart:1516:10)
+#13     runZoned (dart:async/zone.dart:1463:12)
+#14     AppContext.run (package:flutter_tools/src/base/context.dart:152:18)
+<asynchronous suspension>
+#15     FlutterCommand.run (package:flutter_tools/src/runner/flutter_command.dart:375:20)
+#16     CommandRunner.runCommand (package:args/command_runner.dart:197:27)
+<asynchronous suspension>
+#17     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:396:21)
+<asynchronous suspension>
+#18     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:29)
+<asynchronous suspension>
+#19     _rootRun (dart:async/zone.dart:1124:13)
+#20     _CustomZone.run (dart:async/zone.dart:1021:19)
+#21     _runZoned (dart:async/zone.dart:1516:10)
+#22     runZoned (dart:async/zone.dart:1463:12)
+#23     AppContext.run (package:flutter_tools/src/base/context.dart:152:18)
+<asynchronous suspension>
+#24     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:356:19)
+<asynchronous suspension>
+#25     CommandRunner.run.<anonymous closure> (package:args/command_runner.dart:112:25)
+#26     new Future.sync (dart:async/future.dart:224:31)
+#27     CommandRunner.run (package:args/command_runner.dart:112:14)
+#28     FlutterCommandRunner.run (package:flutter_tools/src/runner/flutter_command_runner.dart:242:18)
+#29     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:62:22)
+<asynchronous suspension>
+#30     _rootRun (dart:async/zone.dart:1124:13)
+#31     _CustomZone.run (dart:async/zone.dart:1021:19)
+#32     _runZoned (dart:async/zone.dart:1516:10)
+#33     runZoned (dart:async/zone.dart:1500:12)
+#34     run.<anonymous closure> (package:flutter_tools/runner.dart:60:18)
+<asynchronous suspension>
+#35     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:29)
+<asynchronous suspension>
+#36     _rootRun (dart:async/zone.dart:1124:13)
+#37     _CustomZone.run (dart:async/zone.dart:1021:19)
+#38     _runZoned (dart:async/zone.dart:1516:10)
+#39     runZoned (dart:async/zone.dart:1463:12)
+#40     AppContext.run (package:flutter_tools/src/base/context.dart:152:18)
+<asynchronous suspension>
+#41     runInContext (package:flutter_tools/src/context_runner.dart:56:24)
+<asynchronous suspension>
+#42     run (package:flutter_tools/runner.dart:51:10)
+#43     main (package:flutter_tools/executable.dart:62:9)
+<asynchronous suspension>
+#44     main (file:///E:/Androidstudiosdk/flutter/packages/flutter_tools/bin/flutter_tools.dart:8:3)
+#45     _startIsolate.<anonymous closure> (dart:isolate-patch/isolate_patch.dart:299:32)
+#46     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:172:12)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, v1.7.8+hotfix.3, on Microsoft Windows [Version 6.1.7601], locale zh-CN)
+    • Flutter version 1.7.8+hotfix.3 at E:\Androidstudiosdk\flutter
+    • Framework revision b712a172f9 (32 hours ago), 2019-07-09 13:14:38 -0700
+    • Engine revision 54ad777fd2
+    • Dart version 2.4.0
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 28.0.3)
+    • Android SDK at E:/Androidstudiosdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.3
+    • ANDROID_HOME = E:/Androidstudiosdk
+    • Java binary at: E:\Program Files\Android\android-studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1248-b01)
+    • All Android licenses accepted.
+
+[✓] Android Studio (version 3.3)
+    • Android Studio at E:\Program Files\Android\android-studio
+    • Flutter plugin version 34.0.1
+    • Dart plugin version 182.5215
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1248-b01)
+
+[!] IntelliJ IDEA Ultimate Edition (version 2018.3)
+    • IntelliJ at E:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • For information about installing plugins, see
+      https://flutter.dev/intellij-setup/#installing-the-plugins
+
+[✓] Connected device (1 available)
+    • MI 2 • f1115a1e • android-arm • Android 8.1.0 (API 27)
+
+! Doctor found issues in 1 category.
+```
