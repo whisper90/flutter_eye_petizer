@@ -1,5 +1,8 @@
 # flutter_eye_petizer
 > 使用flutter stable分支创建的一款app，数据来源于豌豆荚出品的短视频日报应用开眼视频。
+1.flutter中常见widget的使用，如MaterailApp，Stack，Visibility，Expanded，Container，Row，Column等;
+2.短视频的播放功能（尚未实现全屏）；
+3.状态管理BlocProvider的使用。
 # App截图
 #### 日报tab
 ![日报](https://github.com/whisper90/flutter_eye_petizer/blob/master/screenshots/Screenshot_daily.png) 
