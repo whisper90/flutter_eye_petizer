@@ -8,4 +8,4 @@
 #### 榜单tab
 ![榜单](https://github.com/whisper90/flutter_eye_petizer/blob/master/screenshots/Screenshot_billboard.png)
 #### 短视频播放页面
-![播放](https://github.com/whisper90/flutter_eye_petizer/blob/master/screenshots/Screenshot_play)
+![播放](https://github.com/whisper90/flutter_eye_petizer/blob/master/screenshots/Screenshot_play.png)
